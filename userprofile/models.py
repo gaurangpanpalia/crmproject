@@ -9,3 +9,7 @@ class Userprofile(models.Model):
     def __str__(self):
         return self.user
     
+class Username(models.Model):
+    username=models.TextField(max_length=20)
+    password=models.TextField(max_length=20)
+    created=models.DateTimeField(auto_now_add=True)
